@@ -1,5 +1,4 @@
 import Phaser from "/imports/startup/phaser-split.js";
-import DJ from "./DJ";
 import Score from "../../../../apis/score";
 export default class extends Phaser.Sprite {
   constructor({ game, x, y, asset }) {
