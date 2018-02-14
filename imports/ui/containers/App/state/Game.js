@@ -6,6 +6,8 @@ export default class extends Phaser.State {
   preload() {}
 
   create() {
+    this.physics.startSystem(Phaser.Physics.ARCADE);
+
     for (var i = 0; i < 10; i++) {
       var sprite = game.add.sprite(64 + 64 * i, 200 + i * 4, "block");
 
@@ -16,7 +18,6 @@ export default class extends Phaser.State {
       sprite.events.onInputDown.add(clickedSprite, this);
     }
     // this.stage.disableVisibilityChange = false;
-    this.physics.startSystem(Phaser.Physics.ARCADE);
     // this.bulletSpeed = 600;
     // // generate random starting x posiiton based on world width
     // const x = Math.floor(Math.random() * this.world.width);

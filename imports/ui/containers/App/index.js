@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { createContainer } from "meteor/react-meteor-data";
+import { withTracker } from "meteor/react-meteor-data";
 import Phaser from "/imports/startup/phaser-split.js";
 import AccountsUIWrapper from "./../../components/AccountsUiWrapper";
 
@@ -66,7 +66,7 @@ class App extends Component {
   }
 }
 
-export default createContainer(() => {
+export default withTracker(() => {
   return {
     currentUserId: Meteor.userId()
   };
