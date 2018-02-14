@@ -13,8 +13,11 @@ export default class extends Phaser.State {
     this.load.audio("backgroundMusic", ["audio/backgroundMusic.mp3"]);
     this.load.audio("splashScreenMusic", ["audio/splashScreenMusic.mp3"]);
     this.load.audio("bulletFire", ["audio/bulletFire.mp3"]);
-    this.load.image("splashScreenImg", "img/splash-screen-img.png");
-    this.load.image("block", "img/aqua_ball.png");
+    this.load.image(
+      "splashScreenImg",
+      "../../../../../public/img/aqua_ball.png"
+    );
+    this.load.image("block", "../../../../../public/img/aqua_ball.png");
   }
 
   create() {

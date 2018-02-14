@@ -1,5 +1,5 @@
 import Phaser from "/imports/startup/phaser-split.js";
-import Player from "./../sprite/Player";
+import Tiles from "./../sprite/tiles";
 // import { fireButton } from './../methods/bullet.js';
 export default class extends Phaser.State {
   init() {}

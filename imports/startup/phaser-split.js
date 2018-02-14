@@ -33,6 +33,8 @@
 * @license      {@link https://github.com/photonstorm/phaser/blob/master/license.txt|MIT License}
 */
 
+import PIXI from './pixi.min.js';
+var p2 = require('p2');
 (function(){
 
     var root = this;

@@ -1,8 +1,6 @@
 import Phaser from "/imports/startup/phaser-split.js";
+import DJ from "./DJ";
 import Score from "../../../../apis/score";
-
-import ButtonBall from "../../../../../public/";
-
 export default class extends Phaser.Sprite {
   constructor({ game, x, y, asset }) {
     super(game, x, y, asset);
