@@ -70,4 +70,4 @@ export default withTracker(() => {
   return {
     currentUserId: Meteor.userId()
   };
-}, App);
+})(App);
